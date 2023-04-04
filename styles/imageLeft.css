@@ -1,0 +1,16 @@
+.bg-img {
+  flex: 1;
+}
+
+.bg-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 940px) {
+  .bg-img {
+    display: none;
+  }
+}

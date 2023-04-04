@@ -1,0 +1,206 @@
+.form {
+  flex: 1;
+}
+
+.form header {
+  margin: 2.5rem;
+}
+
+.form-content {
+  background-color: var(--form-background);
+  padding: 3.25rem 5rem;
+  width: 90%;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.form-content .title {
+  margin-bottom: 1.75rem;
+}
+
+.form-content .title h1 {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--text-title);
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.form-content .title p {
+  font-weight: 400;
+}
+
+.form-content form .inputs {
+  margin-bottom: 1.25rem;
+}
+
+.form-content form .inputs label:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.form-content form .inputs label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-content form .inputs label span {
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.form-content form .inputs label input {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid #868686;
+  padding: 0.875rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.form-content form .inputs label input::placeholder {
+  color: var(--text-base);
+  font-size: 0.875rem;
+}
+
+.form-content form .inputs label input:focus {
+  outline: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+#email {
+  background-image: url('../assets/mail.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-position-x: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+#email:focus {
+  background-image: url('../assets/mail-focus.svg');
+}
+
+#password {
+  background-image: url('../assets/lock.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-position-x: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+#password:focus {
+  background-image: url('../assets/lock-focus.svg');
+}
+
+.viewPassword {
+  background-image: url('../assets/eye.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+
+
+
+.form-content .remember {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-content .remember a {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.form-content .remember label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.form-content .remember input {
+  display: none;
+}
+
+.form-content .remember input:checked + .checkbox {
+  background-image: url('../assets/check.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 17px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+
+.error {
+  color: tomato;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+
+
+
+.form-content .btn {
+  background-color: var(--primary-color);
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  margin: 1.25rem 0rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  color: #473404;
+}
+
+.form-content .btn:hover {
+  background-color: #d6a52a;
+}
+
+
+.form-content .register, .form-content .register a {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+}
+
+.form-content .register a {
+  font-weight: 600;
+  margin-left: 0.1rem;
+}
+
+
+@media (max-width: 940px) {
+  .form {
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .form-content {
+    background-color: transparent;
+    padding: 1rem;
+  }
+
+  #email, #password {
+    padding-left: 3rem;
+  }
+}
