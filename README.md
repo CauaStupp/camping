@@ -1,4 +1,4 @@
-<h1 align="center">Rocketflix</h1>
+<h1 align="center">Camping</h1>
 
 <h2> :scroll: Descrição</h2>
 <p>
@@ -16,7 +16,7 @@
 
 <h2> :framed_picture: Thumb</h2>
 
-<img src="" />
+<img src="./public/Thumb.png" alt="Thumb"/>
 
 
 
